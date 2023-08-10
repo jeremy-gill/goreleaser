@@ -883,6 +883,7 @@ type NFPMOverridables struct {
 	Release          string         `yaml:"release,omitempty" json:"release,omitempty"`
 	Prerelease       string         `yaml:"prerelease,omitempty" json:"prerelease,omitempty"`
 	VersionMetadata  string         `yaml:"version_metadata,omitempty" json:"version_metadata,omitempty"`
+	Predependencies  []string       `yaml:"predependencies,omitempty" json:"predependencies,omitempty"`
 	Dependencies     []string       `yaml:"dependencies,omitempty" json:"dependencies,omitempty"`
 	Recommends       []string       `yaml:"recommends,omitempty" json:"recommends,omitempty"`
 	Suggests         []string       `yaml:"suggests,omitempty" json:"suggests,omitempty"`
