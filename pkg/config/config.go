@@ -837,11 +837,12 @@ type NFPMDebSignature struct {
 
 // NFPMDeb is custom configs that are only available on deb packages.
 type NFPMDeb struct {
-	Scripts   NFPMDebScripts   `yaml:"scripts,omitempty" json:"scripts,omitempty"`
-	Triggers  NFPMDebTriggers  `yaml:"triggers,omitempty" json:"triggers,omitempty"`
-	Breaks    []string         `yaml:"breaks,omitempty" json:"breaks,omitempty"`
-	Signature NFPMDebSignature `yaml:"signature,omitempty" json:"signature,omitempty"`
-	Lintian   []string         `yaml:"lintian_overrides,omitempty" json:"lintian_overrides,omitempty"`
+	Scripts         NFPMDebScripts   `yaml:"scripts,omitempty" json:"scripts,omitempty"`
+	Triggers        NFPMDebTriggers  `yaml:"triggers,omitempty" json:"triggers,omitempty"`
+	Breaks          []string         `yaml:"breaks,omitempty" json:"breaks,omitempty"`
+	Signature       NFPMDebSignature `yaml:"signature,omitempty" json:"signature,omitempty"`
+	Lintian         []string         `yaml:"lintian_overrides,omitempty" json:"lintian_overrides,omitempty"`
+	Predependencies []string         `yaml:"predependencies,omitempty" json:"predependencies,omitempty"`
 }
 
 type NFPMAPKScripts struct {
@@ -883,7 +884,6 @@ type NFPMOverridables struct {
 	Release          string         `yaml:"release,omitempty" json:"release,omitempty"`
 	Prerelease       string         `yaml:"prerelease,omitempty" json:"prerelease,omitempty"`
 	VersionMetadata  string         `yaml:"version_metadata,omitempty" json:"version_metadata,omitempty"`
-	Predependencies  []string       `yaml:"predependencies,omitempty" json:"predependencies,omitempty"`
 	Dependencies     []string       `yaml:"dependencies,omitempty" json:"dependencies,omitempty"`
 	Recommends       []string       `yaml:"recommends,omitempty" json:"recommends,omitempty"`
 	Suggests         []string       `yaml:"suggests,omitempty" json:"suggests,omitempty"`

@@ -2,7 +2,7 @@ module github.com/goreleaser/goreleaser
 
 go 1.20
 
-replace github.com/goreleaser/nfpm/v2 v2.32.0 => github.com/jeremy-gill/nfpm/v2 v2.0.0-20230810160746-97a48c8275fb
+replace github.com/goreleaser/nfpm/v2 v2.32.0 => github.com/jeremy-gill/nfpm/v2 v2.0.0-20230815132716-94b5690cf288
 
 require (
 	code.gitea.io/sdk/gitea v0.15.1

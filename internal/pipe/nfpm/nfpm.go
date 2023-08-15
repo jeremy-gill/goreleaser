@@ -286,7 +286,6 @@ func create(ctx *context.Context, fpm config.NFPM, format string, binaries []*ar
 		Overridables: nfpm.Overridables{
 			Umask:      overridden.Umask,
 			Conflicts:  overridden.Conflicts,
-			Predepends: overridden.Predependencies,
 			Depends:    overridden.Dependencies,
 			Recommends: overridden.Recommends,
 			Provides:   overridden.Provides,
@@ -322,6 +321,7 @@ func create(ctx *context.Context, fpm config.NFPM, format string, binaries []*ar
 					},
 					Type: overridden.Deb.Signature.Type,
 				},
+				Predepends: overridden.Deb.Predependencies,
 			},
 			RPM: nfpm.RPM{
 				Summary:     overridden.RPM.Summary,
