@@ -2,7 +2,7 @@ module github.com/goreleaser/goreleaser
 
 go 1.20
 
-replace github.com/goreleaser/nfpm/v2 v2.32.0 => github.com/jeremy-gill/nfpm/v2 v2.0.0-20230815132716-94b5690cf288
+replace github.com/goreleaser/nfpm/v2 v2.32.1 => github.com/goreleaser/nfpm/v2 v2.32.1-0.20230816021110-b50fc3af8cd0
 
 require (
 	code.gitea.io/sdk/gitea v0.15.1
@@ -30,7 +30,7 @@ require (
 	github.com/google/ko v0.14.1
 	github.com/google/uuid v1.3.0
 	github.com/goreleaser/fileglob v1.3.0
-	github.com/goreleaser/nfpm/v2 v2.32.0
+	github.com/goreleaser/nfpm/v2 v2.32.1
 	github.com/hashicorp/go-multierror v1.1.1
 	github.com/invopop/jsonschema v0.7.0
 	github.com/jarcoal/httpmock v1.3.0
